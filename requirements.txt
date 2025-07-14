@@ -3,3 +3,6 @@ langchain
 openai
 pandas
 pipdf
+fastapi
+pydantic
+uvicorn
