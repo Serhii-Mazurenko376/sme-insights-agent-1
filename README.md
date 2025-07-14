@@ -99,3 +99,10 @@ Participated in early-stage development and initial research for LangChain and d
 ✅ Public GitHub repo & Replit test environment
 ✅ Discord, GitHub, and Trello collaboration
 ```
+🚧 Note: Due to time constraints and integration issues, the live system is not fully functional.
+However, the codebase includes:
+- A working multi-agent chain via `agent.yaml`
+- A file upload interface via FastAPI
+- Test scripts to simulate document analysis
+
+We would continue post-hackathon to bring it to production quality.
