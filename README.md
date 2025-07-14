@@ -1,47 +1,101 @@
-# SME Insights Agent
+# 🧠 SME Insights Agent
 
-SME Insights Agent is a multi-agent AI assistant that analyzes financial documents (e.g., income statements) and provides clear, actionable insights.
+**SME Insights Agent** is an AI-powered assistant designed to help small and medium enterprises quickly analyze financial documents and extract actionable business insights — without requiring technical knowledge.
 
-Built using [LangChain](https://www.langchain.com/), [OpenAI](https://openai.com/), and [AgentOS](https://agentos.org/), it simulates a team of analysts who:
-- Summarize business performance
-- Detect risks and missed opportunities
-- Suggest next steps for growth
+🚀 Built for the GenAI Hackathon, this project uses **LangChain**, **AgentOS**, and the **built-in GenAI provider** to deliver a fully local, no-key-needed experience.
 
-## 🚀 How It Works
+---
 
-1. You provide a financial document (CSV or PDF)
-2. AgentOS loads the multi-agent chain:
-   - **Financial Summarizer Agent**
-   - **Risk & Opportunity Agent**
-   - **Action Advisor Agent**
-3. Output is returned in structured format (JSON)
+## ✅ Features
 
-## 🛠️ How to Run (in Replit or locally)
+- 📄 Upload a financial document (PDF or CSV)
+- 🧠 4-agent system:
+  - **Orchestrator Agent**
+  - **Financial Summarizer Agent**
+  - **Risk & Opportunity Agent**
+  - **Action Advisor Agent**
+- 🔗 Powered by `agent.yaml` via **AgentOS UI**
+- 🛠️ No OpenAI or external API keys required!
 
-```bash
+---
+
+## 💻 How It Works
+
+1. User uploads a document (e.g. income statement)
+2. `agent.yaml` triggers AgentOS chain:
+   - Agent A: **Summarizes** financial performance
+   - Agent B: **Identifies risks/opportunities**
+   - Agent C: **Suggests next steps**
+3. Results are returned in an organized output
+
+---
+
+## 🛠️ Tech Stack
+
+- Python 3
+- LangChain
+- AgentOS Protocol
+- FastAPI
+- Replit (for live prototyping)
+- GitHub
+
+---
+
+## 📁 Repo Structure
+
+```plaintext
+├── agents/
+│   ├── __init__.py
+│   ├── master_agent.py
+├── mlruns/
+├── agent.yaml
+├── test_agent.py
+├── README.md
+├── requirements.txt
+└── …
+```
+Install dependencies:
+
+```
 pip install -r requirements.txt
+```
+Run the app (example):
 
-# Run the agent on a sample file
-agentos run agent.yaml test_data/sample_income.csv
+```
+python3 -m agents.test_agent
 ```
 
-
-📂 Folder Structure
-agents/             → LangChain agent logic
-test_data/          → Sample CSV input files
-agent.yaml          → AgentOS config
-requirements.txt    → Dependencies
+Optionally run via AgentOS UI (agent.yaml based)
 
 
+📁 File Structure
+```
+├── agents/
+│   ├── __init__.py
+│   ├── master_agent.py
+├── mlruns/
+├── agent.yaml
+├── test_agent.py
+├── requirements.txt
+├── README.md
+```
 
-🤖 Technologies
-AgentOS 🧠
+👥 Team – PennyPilot
+
+Serhii Mazurenko – Project Lead, Developer, Agent Logic & Replit Integration
+Led design of the multi-agent logic, integrated Replit and GitHub, and coordinated the hackathon submission.
+
+Jing Li – Product Strategy & Documentation Support
+Provided feedback and review on agent workflow, coordinated via Discord & Trello, and supported communication with mentors.
+
+Wasif Saeed – Initial Contributor (Research & Setup)
+Participated in early-stage development and initial research for LangChain and document processing. Contributed to early discussions and experimentation.
 
 
-LangChain 🧩
-OpenAI GPT-4o ⚙️
-Python 3.11 🐍
-
-
-🧑‍💻 Team
-Built by the PennyPilot Team for the GenAI Hackathon.
+✅ Submission Highlights
+```
+✅ AgentOS Protocol fully integrated
+✅ Built-in GenAI provider (no OpenAI keys needed)
+✅ Public GitHub repo & Replit test environment
+✅ Discord, GitHub, and Trello collaboration
+```
