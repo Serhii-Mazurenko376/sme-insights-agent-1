@@ -1,4 +1,12 @@
-from agents.master_agent import run_agent
+# Example stub
+from langchain.chains import load_chain_from_yaml
 
-def test(data_path: str, llm):
-    return run_agent(data_path, llm=llm)
+# Load your file chunks
+chunks = ["Revenue increased by 15%...", "..."]
+
+# Load agent chain from agent.yaml
+chain = load_chain_from_yaml("agent.yaml")
+
+# Run the chain
+result = chain.run({"input": "\n".join(chunks)})
+print(result)
