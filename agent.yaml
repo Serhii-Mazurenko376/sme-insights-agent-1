@@ -1,0 +1,16 @@
+agent: test_agent:test
+description: Test SME-insights agent
+packages:
+  - langchain
+  - openai
+  - pandas
+  - python-dotenv
+  - agentos
+repos:
+  local:
+    type: local
+    path: .
+components:
+  test:
+    type: python
+    entry_point: test_agent:test

@@ -1,0 +1,5 @@
+agentos
+langchain
+openai
+pandas
+pipdf
