@@ -1,3 +1,4 @@
+<img width="1024" height="1024" alt="B7235C38-F097-45D1-BFF7-58D9AFAEEF58" src="https://github.com/user-attachments/assets/d1d7adbf-ca85-4680-9a3c-02438c7ec702" />
 # 🧠 SME Insights Agent
 
 **SME Insights Agent** is an AI-powered assistant designed to help small and medium enterprises quickly analyze financial documents and extract actionable business insights — without requiring technical knowledge.
